@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat.ttf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    background: rgb(82, 7, 117);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000d9;
+}
+
+.contenidoModal {
+    width: 35vw;
+    height: 75vh;
+    display: flex;
+    overflow: hidden;
+    margin: 5rem auto;
+    align-items: center;
+    border-radius: 0.4rem;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0 0 10px #00000080;
+    /* Sombra centrada */
+}
+
+.cerrar {
+    width: 35vw;
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.fa-xmark {
+    cursor: pointer;
+    color: #3a0552;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.fa-circle-user {
+    color: #ffffff;
+    font-size: 3.9rem;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin-top: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    transition: 0.5s;
+
+
+}
+
+p:hover {
+    border: 1px solid rgb(82, 7, 117);
+    color: rgb(58, 5, 82);
+    background: rgb(153, 63, 194);
+}
+
+.registro {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 1.2rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    width: 18vw;
+    height: 7vh;
+    margin-top: 0.8rem;
+    border-radius: 0.3rem;
+    border: 1px solid grey;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    border: 2px solid #3a0552;
+}
+
+.fila2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#enviar {
+    width: 18vw;
+    height: 7vh;
+    color: white;
+    margin-top: 1.6rem;
+    border-radius: 0.3rem;
+    background: rgb(82, 7, 117);
+}
+
+#mensaje {
+    font-size: 0.7rem;
+    color: red;
+    text-align: center;
+}
+
+.fa-eye, .fa-eye-slash{
+    color: grey;
+}
